@@ -1,0 +1,115 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #2f3640;
+  margin-bottom: 20px;
+}
+
+.table-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.table-list button {
+  background-color: #00a8ff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.table-list button:hover {
+  background-color: #0097e6;
+}
+
+.table-list button.selected {
+  background-color: #0097e6;
+  font-weight: bold;
+}
+
+.table-data {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.table-data table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.table-data th,
+.table-data td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.table-data th {
+  background-color: #00a8ff;
+  color: white;
+}
+
+.table-data tr:hover {
+  background-color: #f1f2f6;
+}
+
+.sql-query {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.sql-query textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  min-height: 80px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.sql-query button {
+  background-color: #00a8ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.sql-query button:hover {
+  background-color: #0097e6;
+}
+
+@media (max-width: 768px) {
+  .table-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sql-query {
+    width: 90%;
+  }
+}

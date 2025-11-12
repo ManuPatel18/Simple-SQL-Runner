@@ -1,0 +1,63 @@
+
+.sql-query-container {
+  max-width: 700px;
+  margin: 20px auto 40px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sql-query-container h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #2f3640;
+  text-align: center;
+}
+
+.sql-query-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sql-query-container textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  font-family: monospace;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  transition: 0.2s;
+}
+
+.sql-query-container textarea:focus {
+  border-color: #00a8ff;
+  box-shadow: 0 0 5px rgba(0, 168, 255, 0.3);
+  outline: none;
+}
+
+.sql-query-container button {
+  align-self: flex-end;
+  background: linear-gradient(90deg, #00a8ff, #0097e6);
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sql-query-container button:hover {
+  background: linear-gradient(90deg, #0097e6, #0078b5);
+}
+
+@media (max-width: 768px) {
+  .sql-query-container {
+    width: 90%;
+    padding: 15px;
+  }
+}
